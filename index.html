@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    
+  </head>
+  <body>
+    
+<h1>
+  <span>
+    Yer
+    <i>aylanish</i>
+    <b>Sikili</b>
+  </span>
+</h1>
+  
+<div class="earth-container">
+  <div
+    class="globe"
+    onmouseover="isHover = true"
+    onmousemove="hoverOrbit(event)"
+    onmouseout="isHover = false"
+  >
+    <div
+      id="northLabel"
+      class="day-label north-label"
+    ></div>
+    <div
+      id="southLabel"
+      class="day-label south-label"
+    ></div>
+  </div>
+  <div class="shadow">
+    <span
+      id="label"
+      class="label"
+    ></span>
+  </div>
+</div>
+
+<div
+  class="orbit-container"
+  onmouseover="isHover = true"
+  onmousemove="hoverOrbit(event)"
+  onmouseout="isHover = false"
+>
+  <div class="sun"></div>
+  <div class="earth"></div>
+  <div class="labels">
+    <div>
+      <span> Solstice </span>
+      <span> Equinox </span>
+      <span> Solstice </span>
+    </div>
+    <div>
+      <span> Dec 21<small>st</small> </span>
+      <span>
+        Mar 20<small>th</small>
+        <br/>
+        Sep 23<small>rd</small>
+      </span>
+      <span> Jun 21<small>st</small> </span>
+    </div>
+  </div>
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>
